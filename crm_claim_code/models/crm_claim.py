@@ -15,6 +15,7 @@ class CrmClaim(models.Model):
         required=True,
         default="/",
         readonly=True,
+        copy=False,
     )
 
     _sql_constraints = [
@@ -27,12 +28,3 @@ class CrmClaim(models.Model):
         if values.get('code', '/') == '/':
             values['code'] = self.env['ir.sequence'].next_by_code('crm.claim')
         return super(CrmClaim, self).create(values)
-
-    @api.multi
-    def copy(self, default=None):
-        self.ensure_one()
-        if default is None:
-            default = {}
-        if 'code' not in default:
-            default['code'] = self.env['ir.sequence'].next_by_code('crm.claim')
-        return super(CrmClaim, self).copy(default)
