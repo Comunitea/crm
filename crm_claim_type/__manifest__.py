@@ -10,7 +10,7 @@
               'Vauxoo',
     'website': 'www.vauxoo.com',
     'license': 'AGPL-3',
-    'version': '9.0.1.0.0',
+    'version': '10.0.1.0.0',
     'depends': [
         'crm_claim',
     ],
@@ -26,6 +26,6 @@
         'demo/crm_claim.xml',
         'demo/crm_claim_stage.xml',
     ],
-    'installable': False,
+    'installable': True,
     'auto_install': False,
 }

@@ -2,7 +2,7 @@
 # © 2015 Vauxoo: Yanina Aular <yani@vauxoo.com>, Osval Reyes <osval@vauxoo.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from openerp import fields, models
+from odoo import fields, models
 
 
 class CrmClaim(models.Model):

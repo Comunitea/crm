@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<openerp>
-    <data>
+<odoo>
         <record id="crm_claim_type_tree" model="ir.ui.view">
             <field name="name">crm.claim.type.tree</field>
             <field name="model">crm.claim.type</field>
@@ -37,6 +36,4 @@
                   id="menu_crm_claim_type_act"
                   parent="crm_claim.menu_config_claim"
                   groups="base.group_no_one"/>
-
-    </data>
-</openerp>
+</odoo>
